@@ -21,6 +21,7 @@ func init() {
 }
 
 func main() {
+	log("-<([ http-file-server ])>-")
 	log("Hello world! 🙂")
 
 	logf("http-port = %q", port)
