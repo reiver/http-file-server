@@ -10,7 +10,7 @@ var port string
 var directory string
 
 func init() {
-	flag.StringVar(&port, "http-port", "8080", "TCP-port to use to serve HTTP")
+	flag.StringVar(&port, "http-port", tcpPort(), "TCP-port to use to serve HTTP")
 	flag.StringVar(&directory, "directory", ".", "the local directory of the static files to serve over HTTP")
 
 	flag.Parse()
